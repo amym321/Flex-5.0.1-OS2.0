@@ -1,0 +1,116 @@
+/*********************** Custom CSS for Boost Filter & Search  ************************/
+
+
+
+
+/**************************** Place your custom css below  ****************************/
+.fancybox-active .boost-pfs-search-suggestion-wrapper {
+  z-index: 99999;
+  position: fixed;
+}
+
+.boost-pfs-filter-option-block .boost-pfs-filter-block-title h3 {
+  text-transform: none;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.boost-pfs-filter-option-block .boost-pfs-filter-block-title h3 > span:before {
+  border: none;
+  content: "‒";
+  color: #c1c1c1;
+  font-size: 25px;
+  position: absolute;
+  right: 6px;
+  font-weight: lighter;
+}
+
+.boost-pfs-filter-option-block .boost-pfs-filter-block-title h3 > span.up:before {
+  content: "+";
+  font-size: 35px;
+  right: 10px;
+}
+
+.boost-pfs-filter-option-block .boost-pfs-filter-block-title .boost-pfs-filter-clear {
+  margin-right: 30px;
+}
+
+/* Wrap theme's sidebar with bc sidebar */
+.boost-pfs-filter-sidebar #shopify-section-collection__sidebar, .boost-pfs-filter-sidebar #shopify-section-search__sidebar {
+  width: 100%;
+}
+.boost-pfs-filter-sidebar .block__collection-list, .boost-pfs-filter-sidebar .block__tag-list, .boost-pfs-filter-sidebar .block__type-list, .boost-pfs-filter-sidebar .block__vendor-list {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-popup {
+    opacity: 0;
+  }
+
+  .boost-pfs-filter-sidebar {
+    width: 100%;
+  }
+
+  #shopify-section-collection__main, #shopify-section-search__main {
+    width: 100%;
+  }
+
+  .boost-pfs-filter-sidebar #shopify-section-collection__sidebar, .boost-pfs-filter-sidebar #shopify-section-collection__sidebar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .search-popup .boost-pfs-search-box {
+    min-width: 400px;
+  }
+
+  .search-popup {
+    margin-bottom: 400px;
+  }
+
+  .boost-pfs-filter-sidebar {
+    width: 25%;
+  }
+
+  #shopify-section-collection__main, #shopify-section-search__main {
+    width: 75%;
+  }
+}
+.collection__filters .collection__sort-by-filter {
+  display: initial;
+}
+
+.boost-pfs-filter-tree-open-body .mobile-menu__toggle-button {
+  z-index: 0;
+}
+
+/**** Custom Search result toolbar ****/
+.boost-pfs-search-result-toolbar {
+  display: flex;
+  align-items: center;
+  margin: 35px 0;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  white-space: nowrap;
+}
+.boost-pfs-search-result-toolbar .boost-pfs-search-result-item:first-child {
+  flex: auto;
+}
+.boost-pfs-search-result-toolbar .boost-pfs-search-result-panel-controls {
+  padding: 17px 0;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .boost-pfs-search-result-toolbar .boost-pfs-search-total-result {
+    display: none;
+  }
+}
+
+.boost-pfs-search-total-result {
+  font-style: italic;
+}
+
+main {
+  min-height: initial;
+}

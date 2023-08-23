@@ -1,0 +1,229 @@
+/* General */
+iframe#admin-bar-iframe,
+.grecaptcha-badge {
+  display: none !important;
+  height: 0 !important;
+}
+
+/* Announcement bar fix */
+.brand__padding {
+  display: none;
+}
+
+.padding.icons__padding {
+  width: 0 !important;
+}
+
+/* Header */
+
+.mega-menu .menu__heading {
+  display: none;
+}
+
+.navbar-item.has-dropdown a:after, 
+.navbar-item.has-mega-menu a:after {
+  font-size: 10px;
+  right: 2em;
+}
+
+.mega-menu__linklist > ul > li:first-child {
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+
+.mega-menu__linklist .mega-menu__child {
+  margin-left: 20px;
+}
+
+.header__link .disclosure__toggle--currency {
+  background: transparent;
+}
+
+.header__link .disclosure__button {
+  color: black !important;
+}
+
+.mega-menu.mega-menu--header-centered .container {
+  max-width: 1200px;
+}
+
+/* Related products */
+.products-slider.slider-gallery {
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* Collection page */
+
+.quick-shop__buttons {
+  pointer-events: none;
+}
+
+.quick_shop.button {
+  pointer-events: all;
+}
+
+.collection-page .collection__title {
+  margin-bottom: 20px;
+}
+
+.collection-page .collection__spacer + .two-fifths {
+  align-items: flex-end;
+}
+
+.page-navigation-arrows {
+  font-size: 0.75em;
+}
+
+/* Product page */
+
+.product-template:not(.product-template--image-scroll) .product-gallery .product-gallery__image {
+  visibility: visible;
+}
+
+.swatch-element.soldout {
+    background: linear-gradient(to top left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 0.8px), rgb(0 0 0 / 40%) 50%, rgba(0,0,0,0) calc(50% + 0.8px), rgba(0,0,0,0) 100%), linear-gradient(to top right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) calc(50% - 0.8px), rgb(0 0 0 / 40%) 50%, rgba(0,0,0,0) calc(50% + 0.8px), rgba(0,0,0,0) 100%);
+}
+
+.ajax-cart__cart-message p,
+.ajax-cart__cart-title {
+  color: #404040 !important;
+}
+
+#theme-ajax-cart {
+  max-height: 85vh;
+}
+
+.ajax-cart .cbb-shipping-rates-calculator {
+  display: none;
+}
+
+.sezzle-hidden {
+  opacity: 0;
+  display: none !important;
+}
+
+.mp-bar-outer {
+  background-color: #c73333 !important;
+}
+
+/** Cart USO Discount **/
+
+.cart__cart-message {
+  margin: 0px 0 10px;
+}
+
+.cart__total .saso-cart-item-price .original_price {
+  display: none;
+}
+
+.saso-cart-original-total {
+  opacity: 0.5;
+}
+
+.saso-cart-item-price .original_price span {
+  color: #404040;
+}
+
+.saso-cart-item-price .discounted_price, 
+.saso-cart-item-line-price .discounted_price {
+  font-weight: normal !important;
+}
+
+.saso-use-discount-code-cart-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.saso-use-discount-code-cart-code {
+  flex: 1 0 auto;
+  max-width: 100%;
+  width: 100%;
+  min-width: 68% !important;
+  padding: 0 10px;
+}
+
+.saso-use-discount-code-cart-apply {
+  min-width: 30%;
+}
+
+.saso-summary {
+  font-size: 14px;
+  padding: 10px 0 10px 10px;
+}
+
+.saso-summary .saso-use-discount-code-cart-container::after {
+  margin-top: 20px;
+}
+
+.saso-cart-item-discount-notes {
+  color: inherit !important;
+}
+
+#saso-notifications {
+  display: none !important;
+}
+
+.saso-notification {
+  display: none !important;
+}
+
+.saso-notification-x {
+  display: none;
+}
+
+.saso-notification {
+  z-index: 1;
+  width: auto;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid;
+  display: inline-block !important;
+  font-weight: bold;
+}
+
+.saso-notification p {
+  text-align: left;
+  padding: 0 10px;
+}
+
+/** Black Friday Sale - custom pricing **/
+span.was-sale-price {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: #c14949;
+}
+
+/** Fix for Giftwizard button **/
+.product-1883378810976 .purchase-details .purchase-details__spb--false {
+  min-height: 44px;
+  margin: 12px 0 0;
+  display: inline-block;
+  height: auto;
+}
+
+/** Sezzle positioning **/
+p.modal_price.subtitle .sezzle-shopify-info-button {
+  display: none;
+}
+
+p.modal_price.subtitle {
+  margin-bottom: 5px;
+}
+
+.quick-shop__container .sezzle-shopify-info-button {
+  display: none;
+}

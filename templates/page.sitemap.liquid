@@ -1,0 +1,55 @@
+{% comment %}
+  To edit the contents of this file, look inside the `sections` folder for the file name that comes directly after `section`. Eg. {% section 'product__main' %} or {% section 'page__banner' %}
+{% endcomment %}
+
+<main id="template-{{ template | replace: '.', '-' | handle }}" class="shopify-section sitemap-page">
+  <section class="section__wrapper
+                  section
+                  ">
+      <div class="container page__container">
+        {% render 'heading',
+                title: page.title,
+                heading_tag: 'h1',
+                context: 'page',
+                text_alignment: 'left'
+        %}
+      </div>
+      <main class="is-width-standard">
+        <div class="page__content content container">
+          <div class="one-third column rte">
+              <h2>Collections</h2>
+              <ul>
+                {% for collection in collections %}
+                  <li>
+                    <a href="{{ collection.url }}">{{ collection.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+          </div>
+          <div class="one-third column rte">
+              <h2>Products</h2>
+              <ul>
+                {% paginate collections.all.products by 1000 %}
+                  {% for product in collections.all.products %}
+                    <li>
+                      <a href="{{ product.url }}">{{ product.title }}</a>
+                    </li>
+                  {% endfor %}
+                {% endpaginate %}
+              </ul>
+          </div>
+          <div class="one-third column rte">
+              <h2>Pages</h2>
+              <ul>
+                  {% for link in linklists.sc-sitemap-all-pages.links %}
+                    <li>
+                      <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                  {% endfor %}
+              </ul>
+          </div>
+        </div>
+      </main>    
+    </div>
+  </section>
+</main>
